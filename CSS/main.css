@@ -243,3 +243,7 @@ footer{
         font-size: 9px;
     }
 }
+
+form {
+    margin-top: 4rem;
+}
