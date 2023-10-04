@@ -30,18 +30,62 @@
    <body>
     <nav class="navbar">
         <ul class="nav-font">
-            <li><a class="active" href="/">Home</a></li>
-            <li><a href="HTML/test.html">placeholder</a></li>
-
+            <p> List </p>
         </ul>
     </nav>
-<div class="body">
-    <div class="text-left default-font">
-    <label for="content-toggle-2" class="content-button">placeholder</label>
-    <input class="collapsible-toggle nav-font" type="checkbox" id="content-toggle-2"></input>
-    <div class="collapsible-content sub-text">
-        <p>test</p>
 
+    <form id="inputForm">
+        <label for="userInput"> </label>
+        <input type="text" id="userInput" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="body">
+        <div class="text-left default-font">
+        <label for="content-toggle-2" class="content-button">placeholder</label>
+        <input class="collapsible-toggle nav-font" type="checkbox" id="content-toggle-2"></input>
+        <div class="collapsible-content sub-text">
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Text Example</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        #myButton {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="displayText">
+            This is some text.
+        </div>
+        <button id="myButton">Remove Text</button>
+    </div>
+    
+    <script>
+        document.getElementById('myButton').addEventListener('click', function() {
+            const displayTextElement = document.getElementById('displayText');
+            if (displayTextElement) {
+                displayTextElement.remove();
+            }
+        });
+    </script>
+</body>
+</html>
+
+            <div id="output"></div>
+    <div id="output"></div>
+    <script src="JS/script.js"></script>
+ </body>
     </div>
     </div>
 </div>
